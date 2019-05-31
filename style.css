@@ -1,0 +1,28 @@
+body {
+    background-color: #333;
+    color: ghostwhite;
+    font-family: 'Raleway', sans-serif;
+    padding:0;
+    margin:0;
+}
+
+h1 {
+    font-size: 3.25rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "tools editor"
+}
+
+.tools {
+    background-color: #555;
+    grid-area: tools;
+}
+
+.editor {
+    grid-area: editor;
+    display: grid;
+    justify-items: center;
+}
