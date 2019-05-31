@@ -19,6 +19,8 @@ h1 {
 .tools {
     background-color: #555;
     grid-area: tools;
+    display: grid;
+    justify-items: center;
 }
 
 .editor {
