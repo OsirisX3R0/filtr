@@ -18,9 +18,35 @@ h1 {
 
 .tools {
     background-color: #555;
+    /* overflow-y: scroll; */
+    padding: 1.2rem;
+    grid-template-rows: 80px;
+    grid-auto-rows: 65px;
+    grid-row-gap: 20px;
     grid-area: tools;
     display: grid;
     justify-items: center;
+}
+
+.group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.group input[type=number] {
+    width: 75px;
+    font-family: 'Raleway', sans-serif;
+    color: ghostwhite;
+    background-color: #666;
+    border: 2px solid #777;
+    border-radius: 4px;
+    text-align:right;
+    justify-self: end;
+}
+
+.group input[type=range] {
+    grid-column: span 2;
 }
 
 .editor {
